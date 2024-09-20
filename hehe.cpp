@@ -32,7 +32,7 @@ void load_tile_images() {
     // Load images for each tile
     for (int i = 0; i < GRID_SIZE * GRID_SIZE; i++) {
         char filename[20];
-        snprintf(filename, sizeof(filename), "images/img%d.jpg", i+1);
+        snprintf(filename, sizeof(filename), "img%d.jpg", i+1);
         SDL_Surface* surface = IMG_Load(filename);
 
         if (surface == NULL) {
